@@ -1,0 +1,39 @@
+{
+  "name": "slides",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "My slides",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locol23/slides.git"
+  },
+  "author": "Yoshitaka Terazawa <locol6622@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/locol23/slides/issues"
+  },
+  "homepage": "https://github.com/locol23/slides#readme",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "deploy": "yarn workspaces run deploy"
+  },
+  "devDependencies": {
+    "code-surfer": "2.0.0-alpha.10",
+    "cpx": "^1.5.0",
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^9.0.0",
+    "mdx-deck": "2",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^5.1.0",
+    "styled-components": "^5.1.1",
+    "vercel": "^19.1.2"
+  }
+}

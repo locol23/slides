@@ -1,0 +1,7 @@
+.cache
+public
+.vercel
+node_modules
+dist
+*.log
+

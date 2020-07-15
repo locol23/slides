@@ -1,0 +1,103 @@
+import { Notes, Head, Appear } from "mdx-deck"
+import { CodeSurferLayout } from "code-surfer"
+export { nightOwl as theme } from "code-surfer"
+import { Bio } from '../../components/Bio'
+
+<Head>
+  <Meta title="Introduction to React" url="https://introduction-to-react-green.vercel.app" description="Introduction to React" imageUrl="./assets/screenshot.png" />
+</Head>
+
+# Introduction to React
+
+locol
+
+---
+
+## About me
+
+<Bio />
+
+---
+
+## What is React :book:
+
+<img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" style={{height:'10rem'}} />
+
+- A JavaScript <em>library</em> for building user interfaces
+  - React is not framework
+  - The architecture using React is pluggable
+- Learn Once, Write Anywhere
+  - [Web](https://reactjs.org/), [Native Apps(Android, iOS)](https://reactnative.dev/), [VR](https://facebook.github.io/react-360/), [Infrastructure](https://adaptjs.org/)
+- Rendering with Virtual DOM
+- Syntax is JSX
+
+---
+
+## BTW, is React used?
+
+---
+
+<a href="https://trends.google.com/trends/explore?q=React,Vue,%2Fg%2F11c6w0ddw9,Svelte" target="_blank" rel="noopener">
+  <img src="./assets/google-trends.png" alt="Google trends" />
+</a>
+
+---
+
+<a href="https://www.npmtrends.com/react-vs-vue-vs-@angular/core-vs-svelte" target="_blank" rel="noopener">
+  <img src="./assets/npm-trends.png" alt="npm trends" />
+</a>
+
+---
+
+## Virtual DOM
+
+---
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQli83IcKv4Buj-BQBRw1d-EorjoQ3c16cOgGig1PNUVZ2zoSTXDgV71ZFEbVRPcrZcgQhVMHCHcmJF/pub?w=960&h=720" alt="virtual DOM render" />
+
+---
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vSwNSJLQ1BFaZjRxA2jlXBD850ppwAGebtM-y8MfiVCwCpppy8_p5Rykh2EfhwbUuoY6Ri-XpNbCEzg/pub?w=960&h=720" alt="App state changes" />
+
+---
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTNvXEm24gHaLf_mEccEsTRF8C95PviPU-UpLtslm708IyDvauInOPqcLy2AgOf2xOycGBVAOlsCONv/pub?w=960&h=720" alt="change virtual DOM" />
+
+---
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vRQzaHy0yjG-V8jr-enzJR0lzpTl8e8qVNXJeWGTCJ_-AxTVvnSxiHjBRf2X9BRFHK3uV2jMNArSNGU/pub?w=960&h=720" alt="DOM rerender" />
+
+---
+
+## JSX
+
+---
+
+<CodeSurferLayout>
+
+```jsx
+import React from 'react'
+
+export function Foo() {
+  return <div>foo</div>
+}
+```
+
+```jsx 3 subtitle="Foo is just a function"
+import React from 'react'
+
+export function Foo() {
+  return <div>foo</div>
+}
+```
+
+```jsx 4 subtitle="return html"
+import React from 'react'
+
+export function Foo() {
+  return <div>foo</div>
+}
+```
+
+</CodeSurferLayout>
+
