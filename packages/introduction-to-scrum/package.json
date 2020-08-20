@@ -1,0 +1,18 @@
+{
+  "name": "introduction-to-scrum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yoshitaka Terazawa",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "mdx-deck deck.mdx",
+    "screenshot": "node ../../bin/screenshot.js",
+    "image:build": "node ../../bin/image.js",
+    "image:copy": "cpx \"./assets/*\" \"./dist/assets\"",
+    "build": "run-s clean && mdx-deck build deck.mdx && run-s image:*",
+    "deploy": "run-s build && vercel --prod",
+    "pdf": "mdx-deck-export pdf deck.mdx -w 1440 -h 810"
+  }
+}

@@ -1,0 +1,276 @@
+import { Notes, Head, Appear, Image } from "mdx-deck"
+import { CodeSurferLayout } from "code-surfer"
+export { nightOwl as theme } from "code-surfer"
+import { Bio, Meta } from '../../components'
+
+<Head>
+  <Meta title="Introduction to Scrum" url="https://introduction-to-scrum.vercel.app" description="Introduction to Scrum" />
+</Head>
+
+# Introduction to Scrum
+
+社内勉強会 @locol
+
+---
+
+## About me
+
+<Bio />
+
+---
+
+## スクラムとは :book:
+
+- アジャイル開発の中のひとつ
+- 改善のフレームワーク
+  - 全員が一丸となって行うべき `作業、会議、成果物` を定めたもの
+
+---
+
+## ウォーターフォール開発とアジャイル開発の違い
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vTf1qxtQv35TOnMDipFV00es64CUkIU39_y8vNTSWIoZdkUv81hzJPKVur3pX8_HP51d8VVaLuHEtBz/pub?w=1440&h=1080" />
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vQCK8U5sa2_yrG4oA0bZtthd-t0jyLhIKFHVja0l5p_EpC_BCn5bMTIf6H1LqFDKWLpSlicJb0WgviU/pub?w=1440&h=1080" />
+
+---
+
+- ウォーターフォール開発
+  - 開発中に要件が頻繁に変わらないプロジェクト
+    - ダムの水量制御システム等
+- アジャイル開発
+  - 開発中に要件が頻繁に変わるプロジェクト
+    - 夏向けに BBQ 特集をしようとしていたが、<br />
+      コロナの影響で急遽、テイクアウト特集に変更等
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vQMirgR_Bwl802-izafjI4uWz-XCdirE6ZCqPawKYWZjJvVgAjO-fF0lMbyYcIfAgyRzUYUrRIcodyu/pub?w=1440&h=810" />
+
+---
+
+## ロール
+
+- プロダクトオーナー
+- 開発チーム
+- スクラムマスター
+
+---
+
+## プロダクトオーナー
+
+- プロダクトの結果責任を取る
+- プロダクトバックログの管理者で、<br />
+  ストーリーの並び順の最終決定権限を持つ
+- プロジェクトに必ず一人必要
+- 開発チームを活用して、プロダクトの価値を最大化する
+- 開発チームに相談できるが、干渉はできない
+
+---
+
+## 開発チーム
+
+- リリース判断可能なプロダクトをつくる
+- 3-9人で構成する
+- 全員揃えばプロダクトをつくれる
+- 上下関係はない
+
+---
+
+## スクラムマスター
+
+- スクラムがうまくまわるようにする
+  - プロダクトバックログの書き方を<br />
+    プロダクトオーナーや開発チームに教える
+  - プロダクトバックログの良い管理方法を探す
+- 妨害を排除する
+  - 妨害リストを作成する
+    - プロジェクト B の急な作業がよく割り込んでくるなど
+
+---
+
+## スクラムマスター
+
+- 支援と奉仕をする
+  - プロダクトオーナーと開発チームの会話を促す
+  - プロダクトオーナーと開発チームの生産性が高くなるように<br />
+    変化を促す
+- 教育、ファシリテート、コーチ、推進役
+  - プロダクトオーナーや開発チームに<br />
+    アジャイル開発やスクラムについて説明し、理解してもらう
+  - 必要に応じて会議の進行を行う
+
+---
+
+## プロダクトバックログ
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vStBhDvSzgolMLcuVu_ShJzVPz3EzAptKsaWqpiI9wzAQMb5I7PQITNrI3xw7uuaH87CoW0E9vgItVO/pub?w=1440&h=810" />
+
+---
+
+## プロダクトバックログ
+
+- プロダクトへの要求（実現したいこと）を実現したい順番に並べ替えた<br />
+  `プロダクトバックログ` と呼ばれるリストを１つ作成
+  - 要求 ＝ ストーリー
+- プロダクトオーナーが管理する
+  - 常にメンテナンスを行い最新に保つ
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vTyfQN6iHswc5EKdssIIN3we-PhW2SYlWC2pVpZhEov5sM_l3Y1eNgm8aZQsUl0us0a4hMj8r3v_R96/pub?w=1440&h=810" />
+
+---
+
+## 具体的なストーリーの書き方
+
+＜ユーザー / 顧客＞として<br />
+＜XXXを達成＞したい<br />
+なぜなら＜理由＞だからだ
+
+＜30代の求職者＞として<br />
+＜勤務地で仕事を探＞したい<br />
+なぜなら＜地元に帰りたい＞から
+
+---
+
+## ストーリーには How を書かない
+
+ユーザー(Who)の望みは、理由(Why)から出てきているため、<br />
+Why を実現する手段(How)はむしろ、<br />
+開発チーム(UI・UX デザイナー)の腕の見せどころ
+
+---
+
+## ポイント
+
+- ストーリーに対してつけるもの
+- 開発チーム内のローカルな数値（規模感）
+
+---
+
+## ベロシティ
+
+- スプリントで開発チームが実現できたストーリーのポイント合計
+- ベロシティを元にスプリントプランニングでどの程度スプリントに<br />
+  ストーリーを入れる(スプリントバックログに載せる)か検討する
+- 人を増やしても馴染むのに時間が掛かるため、<br />
+  すぐにはベロシティは上がらない
+- 周りからベロシティを上げてほしいと声が上がっても聞いてはいけない
+  - ベロシティが上がるように簡単なストーリーを消化するなど、<br />
+    細工してしまいがちなため
+- 安定したベロシティであれば、見積もりとして使用できる
+
+---
+
+## スプリントプランニング
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vQVIRGDPxnXbR06ZioPq7wUCPEeDy7R9v3vL5PDDUHrzpuJ6pqAVgG2KRH2jMLmXmgMHiiiKQsQagmJ/pub?w=1440&h=810" />
+
+---
+
+## スプリントプランニング
+
+- スプリントで開発をするためには計画が必要
+- プロダクトオーナーは何をほしいのか（第一部）
+- 開発チームはどれくらいできそうか（第一部）
+- 開発チームはどうやってそれを実現するか（第二部）
+
+---
+
+## スプリント
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vQdz5aBtbDR4OcllMIZmk-dSinN8ybkFv_q5y9LIvvjsm4Rk_Qrqt9BjabZUIi48Yw54QCZfxvllIA2/pub?w=1440&h=810" />
+
+---
+
+## スプリント
+
+- 繰り返し開発を行う固定の期間のこと
+  - 週単位で期間が設定されることが多い
+  - 短ければ1週間、最長4週間
+- スプリントの最終日に作業が残っていてもスプリントは終了し、<br />
+  `延長はしない`
+- スプリントの期間はプロダクトの規模や開発チームの人数、成熟度、<br />
+  ビジネスの状況などを踏まえて決定する
+
+---
+
+## スプリントレビューと振返り
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vTqQFmQaDeS2iKG_FSvMP318kNLc8Hmwn90Fg7eyBvsfjuTekkbpvF0xBmsVAXH-pKQr_dLnXTiabST/pub?w=1440&h=810" />
+
+---
+
+## スプリントレビュー
+
+- プロダクトオーナーが完了したストーリーの内容を確認する
+- 開発チームが完了できなかったバックログの項目について説明する
+- プロダクトオーナーがプロダクトの状況やビジネスの環境について説明する
+- プロダクトバックログに追加すべき項目の有無について議論する
+- プロジェクトを進める上で問題となる事項について関係者で議論する
+
+---
+
+## 振返り（スプリントレトロスペクティブ）
+
+- プロセスやツールなどの観点で今回のスプリントを検査する
+- うまくいったこと、今後改善すべき点を整理する
+- 今後のアクションプランをつくる
+  - スクラムでは何か新しい試みや改善を行い失敗しても、<br />
+    スプリントが短いため、小さい失敗になる
+    - 挑戦しやすい環境と言える
+
+---
+
+## デイリースクラム
+
+---
+
+<Image src="https://docs.google.com/drawings/d/e/2PACX-1vTznWJKVsM7SpSOdnUqYO6z48d_uV27oE7MwMzUIbRe5vjhxc_G85FkohGRji4ArbiRzJno1ep5WH9G/pub?w=1440&h=810" />
+
+---
+
+## デイリースクラム
+
+- 開発チームの状況を毎日確認する
+- 内容
+  - 前回のデイリースクラムからやったこと
+  - 次回のデイリースクラムまでやること
+  - 困っていること
+
+---
+
+## まとめ
+
+- スクラムは改善のフレームワーク
+- プロダクトオーナーが優先度をつけ、プロダクトバックログを管理する
+- ストーリーは How を入れず、INVEST を意識して作成する
+- 今回触れていないこと
+  - リファインメント
+  - インセプションデッキ
+  - プランニングポーカー
+  - etc
+
+---
+
+## Appendix
+
+---
+
+## 参考
+
+- [SCRUM BOOT CAMP](https://www.amazon.co.jp/dp/B00DIM6BMI/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+
