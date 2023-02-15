@@ -1,9 +1,6 @@
 {
   "name": "slides",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "version": "1.0.0",
   "description": "My slides",
   "main": "index.js",
@@ -36,5 +33,6 @@
     "puppeteer": "^5.1.0",
     "styled-components": "^5.1.1",
     "vercel": "^19.1.2"
-  }
+  },
+  "packageManager": "pnpm@7.27.0"
 }
